@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MedCura — Doação de medicamentos de alto custo</title>
+  <meta name="description"
+    content="Plataforma que conecta doadores, beneficiários e voluntários para doação de medicamentos de alto custo com transparência.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  <link rel="icon" type="image/png" href="imagens/favicon.png">
+</head>
+
+<body>
+  <a href="#conteudo" style="position:absolute;left:-9999px;">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container row center-between">
+      <a class="brand text-gradient" href="index.html" aria-label="Página inicial da medcura"><img src="imagens/icon2.png" width="40px">Medcura</a>
+      <nav id="menu-principal" aria-label="principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
+      <button id="btn-menu-mobile" aria-expanded="false" aria controls="menu-principal" aria-label="Abrir menu principal">
+        <span class="hamburguer"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container vspace-64">
+    <section class="hero grid vspace-32" aria-labelledby="hero-title">
+  <div class="col-7 md-12">
+    <h1 id="hero-title" class="text-gradient">MedCura</h1>
+    <p class="vspace-16">
+      Construímos um <strong>estoque solidário de medicamentos de alto custo</strong> e fundos coletivos
+      para que mais pessoas recebam tratamento com rapidez e transparência.
+    </p>
+    <p class="vspace-32">
+      <a class="btn btn-primary" href="projetos.html">Ver campanhas</a>
+      <a class="btn btn-outline" href="cadastro.html">Quero contribuir</a>
+    </p>
+    <small>Doar medicamento ou recurso financeiro • Acompanhar estoque e relatórios</small>
+  </div>
+  <figure class="col-5 md-12">
+    <img src="imagens/index.jpg" alt="Rede de doação coletiva para formar estoque de medicamentos">
+  </figure>
+</section>
+
+
+    <section aria-labelledby="sobre">
+      <h2 id="sobre">Sobre o Projeto</h2>
+      <p>
+        A <strong>MedCura</strong> é uma plataforma digital criada para aproximar pessoas e instituições dispostas a
+        doar
+        <strong>medicamentos de alto custo</strong> de quem mais precisa deles. O sistema permite o cadastro de
+        doadores,
+        beneficiários e voluntários, promovendo uma rede solidária e transparente.
+      </p>
+      <p>
+        Nosso objetivo é salvar vidas por meio da redistribuição responsável desses medicamentos,
+        seguindo critérios de segurança e conformidade legal. Acreditamos que a tecnologia pode ser uma ponte entre a
+        <em>solidariedade</em> e o <em>acesso à saúde</em>.
+      </p>
+    </section>
+
+<section id="missao-visao-valores" class="container vspace-64" aria-labelledby="mvv-titulo">
+  <div class="carrossel-mvv">
+    <div class="carrossel-container">
+
+      <div class="slide ativo" data-modal-target="missao-modal" tabindex="0" role="button" aria-controls="missao-modal">
+        <img src="imagens/missao.jpg" alt="Ícone da missão Medcura">
+        <div class="descricao">
+          <h3>Missão</h3>
+          <p>Clique para ver os detalhes</p>
+        </div>
+      </div>
+
+      <div class="slide" data-modal-target="visao-modal" tabindex="0" role="button" aria-controls="visao-modal">
+        <img src="imagens/visao.jpg" alt="Ícone da visão MedCura">
+        <div class="descricao">
+          <h3>Visão</h3>  
+          <p>Clique para ver os detalhes</p>
+        </div>
+      </div>
+
+      <div class="slide" data-modal-target="valores-modal" tabindex="0" role="button" aria-controls="valores-modal">
+        <img src="imagens/valores.jpg" alt="Ícone dos valores Medcura">
+        <div class="descricao">
+          <h3>Valores</h3>
+          <p>Clique para ver os detalhes</p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="seta-anterior" aria-label="Slide anterior">&#10094;</button>
+    <button class="seta-proximo" aria-label="Próximo slide">&#10095;</button>
+  </div>
+</section>
+
+<dialog id="missao-modal" aria-labelledby="missao-title">
+  <article>
+    <button class="btn-close-modal" aria-label="Fechar modal">Fechar</button>
+    <h3 id="missao-title" style="color: var(--primary-700);">Missão</h3>
+    <p>Facilitar o acesso a <strong>medicamentos de alto custo</strong>, conectando doadores, beneficiários e voluntários para promover saúde, dignidade e esperança.</p>
+    <p class="text-center mt-32">
+      <button class="btn btn-primary btn-close-modal">Fechar</button>
+    </p>
+  </article>
+</dialog>
+
+<dialog id="visao-modal" aria-labelledby="visao-title">
+  <article>
+    <button class="btn-close-modal" aria-label="Fechar modal">Fechar</button>
+    <h3 id="visao-title" style="color: var(--primary-700);"> Visão</h3>
+    <p>Ser uma <strong>ponte de solidariedade</strong>, ajudando o maior número possível de pessoas a recuperarem sua saúde e qualidade de vida, tornando-se referência nacional em transparência e impacto social no setor de doação de medicamentos.</p>
+    <p class="text-center mt-32">
+      <button class="btn btn-primary btn-close-modal">Fechar</button>
+    </p>
+  </article>
+</dialog>
+
+<dialog id="valores-modal" aria-labelledby="valores-title">
+  <article>
+    <button class="btn-close-modal" aria-label="Fechar modal">Fechar</button>
+    <h3 id="valores-title" style="color: var(--primary-700);">️ Valores</h3>
+    <ul>
+      <li><strong>Empatia:</strong> todos são tratados com respeito, dignidade e humanidade.</li>
+      <li><strong>Solidariedade:</strong> transformar empatia em ação concreta.</li>
+      <li><strong>Transparência:</strong> garantir clareza e confiança em cada etapa.</li>
+      <li><strong>Ética:</strong> agir com responsabilidade social e respeito à vida.</li>
+      <li><strong>Segurança:</strong> assegurar o manuseio correto e o destino responsável dos medicamentos.</li>
+    </ul>
+    <p class="text-center mt-32">
+      <button class="btn btn-primary btn-close-modal">Fechar</button>
+    </p>
+  </article>
+</dialog>
+
+    <section aria-labelledby="objetivos">
+      <h2 id="objetivos">Objetivos</h2>
+      <ul>
+        <li>Formar e manter um <strong>estoque solidário</strong> de medicamentos de alto custo.</li>
+        <li>Operar <strong>fundos coletivos</strong> para compras centralizadas e urgências.</li>
+        <li>Ampliar o acesso ao tratamento, atendendo o <strong>maior número possível de pessoas</strong>.</li>
+        <li>Garantir <strong>transparência</strong> por meio de relatórios de estoque e financeiros.</li>
+      </ul>
+
+    </section>
+
+    <section class="vspace-64" aria-labelledby="funcionalidades">
+  <h2 id="funcionalidades">Funcionalidades</h2>
+
+  <div class="grid vspace-32">
+    <article class="card col-3 lg-6 sm-12" aria-labelledby="doadores">
+      <h3 id="doadores">Para Doadores</h3>
+      <ul>
+        <li>Cadastro como doador (medicamentos ou recursos)</li>
+        <li>Ver campanhas ativas e necessidades urgentes</li>
+        <li>Acompanhar impacto das doações</li>
+        <li>Histórico de contribuições</li>
+      </ul>
+    </article>
+
+    <article class="card col-3 lg-6 sm-12" aria-labelledby="beneficiarios">
+      <h3 id="beneficiarios">Para Beneficiários</h3>
+      <ul>
+        <li>Cadastro com informações médicas e socioeconômicas</li>
+        <li>Solicitação de medicamentos específicos</li>
+        <li>Acompanhamento do status</li>
+        <li>Informações sobre direitos e legislação</li>
+      </ul>
+    </article>
+
+    <article class="card col-3 lg-6 sm-12" aria-labelledby="voluntarios">
+      <h3 id="voluntarios">Para Voluntários</h3>
+      <ul>
+        <li>Cadastro por área de atuação</li>
+        <li>Gestão de disponibilidade</li>
+        <li>Atuação em triagem e distribuição</li>
+        <li>Treinamentos online</li>
+      </ul>
+    </article>
+
+    <article class="card col-3 lg-6 sm-12" aria-labelledby="gerais">
+      <h3 id="gerais">Funcionalidades Gerais</h3>
+      <ul>
+        <li>Busca e filtros</li>
+        <li>Campanhas com metas e progresso</li>
+        <li>Relatórios de transparência</li>
+        <li>Notificações e suporte a mobile</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+ <footer class="footer">
+  <div class="container">
+    <section>
+      <h3>MedCura</h3>
+      <p>Curando através da solidariedade e da esperança por meio do acesso a <strong>medicamentos de alto custo</strong>.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook da MedCura">Fb</a>
+        <a href="#" aria-label="Instagram da MedCura">Ig</a>
+        <a href="#" aria-label="LinkedIn da MedCura">In</a>
+      </div>
+    </section>
+
+    <section>
+      <h4>Links Rápidos</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h4>Contato</h4>
+      <p>contato@medcura.org.br</p>
+      <p>0800 021 9090</p>
+      <p>Rio de Janeiro, RJ — Brasil</p>
+    </section>
+
+    <section>
+      <h4>Transparência</h4>
+      <ul>
+        <li><a href="#">Relatórios Financeiros</a></li>
+        <li><a href="#">Prestação de Contas</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <p class="footer-bottom">© 2025 MedCura • Todos os direitos reservados</p>
+</footer>
+
+  </body>
+</html>

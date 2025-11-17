@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos e Campanhas — MedCura</title>
+  <meta name="description" content="Campanhas de doação de medicamentos de alto custo e relatórios de transparência da MedCura.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- Skip link para acessibilidade -->
+  <a href="#conteudo" class="sr-only">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container row center-between">
+      <a class="brand text-gradient" href="index.html" aria-label="Página inicial da medcura"><img src="imagens/icon2.png" width="40px">Medcura</a>
+
+      <nav id="menu-principal" aria-label="principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
+        </ul>
+      </nav>
+      <button id="btn-menu-mobile" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu principal">
+      <span class="hamburguer"></span>
+    </button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container vspace-64">
+ <!-- Seção Hero com Imagem para Projetos -->
+ <section class="secao-hero-projetos vspace-64" aria-labelledby="hero-projetos">
+   <div class="hero-imagem">
+     <img src="imagens/campanhas.jpg" alt="Campanhas de doação da MedCura">  
+   </div>
+   <div class="hero-conteudo">
+     <h1 id="hero-projetos" class="text-gradient">Campanhas e Projetos</h1>
+     <p>Conheça as campanhas ativas da MedCura e veja como você pode fazer a diferença. Cada doação, por menor que seja, salva vidas.
+     </p>
+   </div>
+ </section>
+ 
+<section class="vspace-32" aria-labelledby="campanhas">
+  <h2 id="campanhas">Campanhas Coletivas</h2>
+  <p>Escolha um fundo ou o estoque solidário e acompanhe o impacto das doações.</p>
+
+  <!-- Filtros simples (opcional, pronto pro CSS/JS depois) -->
+  <p class="vspace-16">
+    <a class="btn btn-outline" href="#">Todos</a>
+    <a class="btn btn-outline" href="#">Estoque</a>
+    <a class="btn btn-outline" href="#">Fundos de Tratamento</a>
+    <a class="btn btn-outline" href="#">Emergenciais</a>
+  </p>
+
+  <div class="cards vspace-32">
+    <!-- Estoque Solidário -->
+    <article class="card">
+      <h3>Estoque Solidário</h3>
+      <p><span class="badge">Estoque</span> <span class="badge">Contínua</span></p>
+      <p>Arrecadação permanente de medicamentos de alto custo para atender múltiplos pacientes.</p>
+      <div class="progress" aria-label="Meta de frascos" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="45">
+        <span style="width:45%"></span>
+      </div>
+      <p><strong>450 frascos</strong> de 1.000</p>
+      <a class="btn btn-primary" href="#">Doar para o estoque</a>
+    </article>
+
+    <!-- Fundo de Tratamento Oncológico -->
+    <article class="card">
+      <h3>Fundo de Tratamento Oncológico</h3>
+      <p><span class="badge">Fundo</span> <span class="badge">Mensal</span></p>
+      <p>Recurso financeiro usado para compras centralizadas de medicamentos oncológicos.</p>
+      <div class="progress" aria-label="Meta financeira" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62">
+        <span style="width:62%"></span>
+      </div>
+      <p><strong>R$ 62.000</strong> de R$ 100.000</p>
+      <a class="btn btn-primary" href="#">Contribuir com o fundo</a>
+    </article>
+
+    <!-- Fundo Emergencial (raras/alta urgência) -->
+    <article class="card">
+      <h3>Fundo Emergencial</h3>
+      <p><span class="badge badge--urgent">Emergencial</span> <span class="badge">Raras</span></p>
+      <p>Reserva para compras urgentes em casos críticos e doenças raras.</p>
+      <div class="progress" aria-label="Meta emergencial" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="28">
+        <span style="width:28%"></span>
+      </div>
+      <p><strong>R$ 28.000</strong> de R$ 100.000</p>
+      <a class="btn btn-primary" href="#">Apoiar agora</a>
+    </article>
+  </div>
+</section>
+
+
+    <!-- Transparência -->
+    <section class="vspace-64" aria-labelledby="transparencia">
+      <h2 id="transparencia">Transparência</h2>
+      <p>
+        A <strong>MedCura</strong> mantém o compromisso com a transparência em todas as doações.
+        Nesta seção, serão publicados relatórios financeiros, gráficos de arrecadação e prestações de contas trimestrais.
+      </p>
+
+      <article class="card vspace-32">
+        <h3>Relatórios Financeiros</h3>
+        <p>Confira o destino dos recursos arrecadados e o balanço de campanhas anteriores.</p>
+        <a class="btn btn-outline" href="#">Baixar relatório em PDF</a>
+      </article>
+
+      <article class="card">
+        <h3>Metas e Resultados</h3>
+        <p>Veja o progresso das campanhas e os resultados alcançados com o apoio da comunidade.</p>
+        <a class="btn btn-outline" href="#">Visualizar estatísticas</a>
+      </article>
+
+      <article class="card vspace-32">
+        <h3>Estoque Atual (resumo)</h3>
+        <ul>
+          <li><strong>Oncologia:</strong> 320 frascos / 1.200 doses</li>
+          <li><strong>Autoimunes:</strong> 180 frascos / 600 doses</li>
+          <li><strong>Raras:</strong> 75 frascos / 190 doses</li>
+        </ul>
+        <a class="btn btn-outline" href="#">Ver detalhamento do estoque</a>
+      </article>
+    </section>
+  </main>
+<footer class="footer">
+  <div class="container">
+    <section>
+      <h3>MedCura</h3>
+      <p>Curando através da solidariedade e da esperança por meio do acesso a <strong>medicamentos de alto custo</strong>.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook da MedCura">Fb</a>
+        <a href="#" aria-label="Instagram da MedCura">Ig</a>
+        <a href="#" aria-label="LinkedIn da MedCura">In</a>
+      </div>
+    </section>
+
+    <section>
+      <h4>Links Rápidos</h4>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h4>Contato</h4>
+      <p>contato@medcura.org.br</p>
+      <p>0800 021 9090</p>
+      <p>Rio de Janeiro, RJ — Brasil</p>
+    </section>
+
+    <section>
+      <h4>Transparência</h4>
+      <ul>
+        <li><a href="#">Relatórios Financeiros</a></li>
+        <li><a href="#">Prestação de Contas</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+      </ul>
+    </section>
+  </div>
+  <p class="footer-bottom">© 2025 MedCura • Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
+
+ 
