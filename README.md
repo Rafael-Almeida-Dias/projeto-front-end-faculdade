@@ -4,6 +4,7 @@ Projeto de front-end desenvolvido para a disciplina da faculdade.
 Este projeto foi desenvolvido para fins acadêmicos. O sistema inclui página inicial, página de projetos, página de cadastro e estilos personalizados.
 
 Estrutura do Projeto
+
 /
 ├── index.html
 ├── projetos.html
